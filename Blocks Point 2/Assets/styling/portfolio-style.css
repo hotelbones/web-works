@@ -1,0 +1,158 @@
+@font-face {
+  font-family: 'ibmDosFont';
+  src: url('fonts/Px437_IBM_VGA9.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body{
+  height: 100%;
+  width: 100%;
+  background-color: #000084;
+  margin:  0;
+  padding:  0;
+  font-family: 'ibmDosFont';
+}
+
+nav{
+}
+
+a{
+  padding: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+nav a:hover{
+  background-color: black;
+  color: #C4C4C4;
+  padding:20px;
+  transition: all 1.5s linear;
+}
+
+li, a{
+  list-style: none;
+}
+
+.full-content{
+  display: grid;
+  grid-row-gap: 10px;
+  grid-template-rows: repeat(3, minmax(10px, auto));
+  grid-template-columns: 20px 26fr 52fr 26fr 20px;
+  /* padding:  20px; */
+}
+
+.nav-div{
+  grid-row: 1 / 1;
+  grid-column: 1 / 6;
+}
+
+.nav-bar{
+  /* width: 100%; */
+  background-color: #C4C4C4;
+  padding: 20px 30px;
+  display: grid;
+  grid-template-columns: 8% 8% 14% 8% 8% 8%;
+
+  /* align-self: stretch; */
+}
+
+.nav-get-started{
+  grid-column: 3;
+}
+
+.display-container{
+  grid-row:2;
+  grid-column: 2;
+}
+
+.display-scroll1{
+  position: fixed;
+  /* top: 5vw; */
+  /* left: 1vw; */
+  width: 22vw;
+  height: 35vw;
+  background-color: #C4C4C4;
+  /* z-index: 1; */
+}
+
+.display-drop-shadow{
+  position: fixed;
+  /* top: 6vw; */
+  /* left: 2vw; */
+  width: 22vw;
+  height: 35vw;
+  margin-left: 20px;
+  margin-top: 20px;
+  z-index: -1;
+  background-color: black;
+}
+
+.display-face{
+  width: 15vw;
+  height: 15vw;
+  margin-left: 3vw;
+  margin-top: 2vw;
+}
+
+.display-name{
+  margin-left: 5vw;
+}
+
+.display-hidden{
+  /* grid-row:2;
+  grid-column: 2; */
+}
+
+.open-book-hover{
+
+}
+
+a.open-book-hover:hover + .open-book{
+opacity: 1;
+left: 30px;
+transition: all 1.5s linear;
+
+}
+
+
+
+
+.about-header{
+  background-color: #00AAAA;
+  grid-row: 2;
+  grid-column: 3;
+  padding-left: 2vw;
+}
+
+.about-content{
+  border: 0.2vw solid;
+  padding: 1vw;
+  stroke: #C4C4C4;
+  stroke-width: 3;
+  color: #C4C4C4;
+  grid-row: 3;
+  grid-column: 3;
+}
+
+.my-work{
+  grid-row: 4;
+  grid-column: 3;
+  background-color: #00AAAA;
+  padding-left: 2vw;
+}
+
+.my-work-body{
+  background-color: black;
+  color: white;
+  grid-row: 5;
+  grid-column: 3;
+}
+
+.open-book-link{
+
+}
+
+.open-book-link:hover + .open-book-div{
+  display:block;
+}

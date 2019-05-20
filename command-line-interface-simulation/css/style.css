@@ -1,0 +1,137 @@
+@font-face {
+  font-family: 'ibmDosFont';
+  src: url('fonts/Px437_IBM_VGA9.ttf') format('truetype');
+  font-size: 42px;
+  font-weight: normal;
+  font-style: normal;
+}
+html {
+  background: #FFD2D8;
+  overflow-y: scroll;
+  font-size: 42px;
+  font: 2em/1.6 'Inconsolata', monospace;
+}
+
+main {
+  font: .875em/1.6 'Inconsolata', monospace;
+  color: #6862FD;
+  font-weight: 400;
+  max-width: 28em;
+  padding: .7em;
+  padding-bottom: .3em;
+  margin: 5% 0;
+}
+::selection{
+  background: #eee
+}
+::-webkit-selection{
+  background: #eee
+}
+::-moz-selection{
+  background: #eee
+}
+a{
+  color: #FFA942;
+}
+a:hover,a:focus{
+  background: #181818;
+  color:#FFA942;
+}
+h2{
+  font-size: 1em;
+  font-weight: 400;
+}
+p{
+  margin-bottom:2em;
+}
+abbr{
+  cursor: help;
+}
+ul{
+  list-style: none;
+  padding: 0;
+}
+li{
+  margin:1em 0 0;
+}
+span{
+  display: block;
+  color:#FFA942;
+  line-height:1;
+}
+
+kbd{
+  font-family: 'Inconsolata', monospace;
+  border:1px solid #FFA942;
+  text-transform: uppercase;
+  padding:0 .2em;
+}
+input[type="text"]{
+  max-width: 10em;
+  border: none;
+  font-family: inherit;
+  background: #FFD2D8;
+  padding:0 .5em;
+}
+input[type="text"]:focus{
+  background: #FFD2D8;
+  color: #000;
+  outline:none;
+}
+.command{
+  display: block;
+  max-width: 20em;
+  color: #181818;
+  font-weight: 700;
+  margin: 2em 0;
+}
+
+.command-list{
+  display: unset;
+  position: fixed;
+  float:right;
+  right: 100px;
+  font-size: 30px;
+  color:#FFA942;
+}
+
+
+section{
+  display: none;
+}
+.open{
+  display: block;
+}
+
+#candiv {
+}
+
+.scorediv{
+  padding: 2px 5px;
+  text-align: center;
+
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  margin-left: 10px;
+}
+.footer{
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+
+  width: 100px;
+  height: 25px;
+}
+.scoreText{
+  padding-right: 2px;
+}
+
+.scoreValue{
+  padding: 0px 5px;
+}
+
+#blocks{
+  background-color: "red";
+}
